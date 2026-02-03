@@ -74,3 +74,14 @@ function updateProfit() {
         resultDisplay.style.color = "red";
     }
 }
+function updateProfit() {
+    // ... code l-qdim dialk ...
+    const historyBody = document.getElementById('history-body');
+    const newRow = historyBody.insertRow(0); // Zid l-calcul l-fou9
+    
+    newRow.innerHTML = `
+        <td style="padding: 8px;">${stake} DH</td>
+        <td style="padding: 8px;">${odd}</td>
+        <td style="padding: 8px; font-weight: bold; color: green;">${(stake * odd).toFixed(2)} DH</td>
+    `;
+}
