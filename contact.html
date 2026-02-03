@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Visiter Paris</div>
+            <div class="menu-toggle">☰</div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">Histoire</a></li>
+                <li><a href="monuments.html">Monuments</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="transports.html">Transports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contactez-nous</h2>
+            <p style="text-align: center; margin-bottom: 40px;">
+                Vous avez une question sur votre futur séjour ? Une urgence ?<br>
+                N'hésitez pas à nous contacter directement ou via le formulaire.
+            </p>
+            
+            <div class="cards-container" style="margin-bottom: 50px; justify-content: center;">
+                
+                <div class="card" style="text-align: center; align-items: center;">
+                    <h3 style="margin-top: 20px;"> Par Téléphone</h3>
+                    <p>Pour une réponse immédiate :</p>
+                    <p style="font-size: 1.2rem; font-weight: bold; color: #e74c3c;">+212 7 64 38 12 55</p>
+                    <a href="tel:+33142960000" class="btn-tarif" style="margin-top: 10px;">Appeler</a>
+                </div>
+
+                <div class="card" style="text-align: center; align-items: center;">
+                    <h3 style="margin-top: 20px;"> Par Email</h3>
+                    <p>Pour les devis et infos :</p>
+                    <p style="font-size: 1.2rem; font-weight: bold; color: #2c3e50;">janouane.a034@ucd.ac.ma</p>
+                    <a href="mailto:contact@paris-visite.com" class="btn-tarif" style="margin-top: 10px;">Envoyer un mail</a>
+                </div>
+
+            </div>
+
+            <h3 style="text-align: center; margin-bottom: 20px;">Ou envoyez-nous un message ici :</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nom">Votre Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ex: Jean Dupont">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Votre Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: jean@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Votre Message :</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Bonjour, je voudrais savoir..."></textarea>
+                </div>
+                
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Projet Web Tourisme Paris by adam janouane</p>
+        <button id="scrollTopBtn">⬆</button>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
