@@ -55,33 +55,3 @@ detailButtons.forEach(btn => {
 });
 
 });
-// Function bach t-calculi w t-affichi l'rab7 f l'interface
-function updateProfit() {
-    const stake = document.getElementById('stake').value;
-    const odd = document.getElementById('odd').value;
-    const resultDisplay = document.getElementById('result');
-
-    if (stake > 0 && odd > 0) {
-        const profit = (stake * odd).toFixed(2);
-        const probability = ((1 / odd) * 100).toFixed(0);
-        
-        resultDisplay.innerHTML = `
-            Potential Gain: <span style="color: green;">${profit} DH</span><br>
-            Winning Chance: <span style="color: blue;">${probability}%</span>
-        `;
-    } else {
-        resultDisplay.innerHTML = "Please enter valid numbers!";
-        resultDisplay.style.color = "red";
-    }
-}
-function updateProfit() {
-    // ... code l-qdim dialk ...
-    const historyBody = document.getElementById('history-body');
-    const newRow = historyBody.insertRow(0); // Zid l-calcul l-fou9
-    
-    newRow.innerHTML = `
-        <td style="padding: 8px;">${stake} DH</td>
-        <td style="padding: 8px;">${odd}</td>
-        <td style="padding: 8px; font-weight: bold; color: green;">${(stake * odd).toFixed(2)} DH</td>
-    `;
-}
